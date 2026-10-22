@@ -4,9 +4,11 @@
 
 - **Helm release:** `demo-ingress`
 - **Namespace:** `demo-app`
-- **Chart:** `ingress-nginx/ingress-nginx`
+- **Chart:** `ingress-nginx/ingress-nginx` (official upstream chart, repo `https://kubernetes.github.io/ingress-nginx`)
 - **Controller pods observed:** 1
-- **Pod status observed:** `1/1 Running` (pod `demo-ingress-ingress-nginx-controller-5487bfd5d-8nxcs`, 0 restarts)
+- **Pod status observed:** `1/1 Running` (pod `demo-ingress-ingress-nginx-controller-5487bfd5d-svnp7`, 0 restarts, node `a844dcb1`, IP `10.42.0.5`)
+
+Observed via `kubectl get pods -n demo-app -l app.kubernetes.io/instance=demo-ingress` after the controller settled: exactly one controller pod, READY `1/1`, STATUS `Running`.
 
 ## Browser smoke check
 
