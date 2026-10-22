@@ -18,3 +18,7 @@ The ingress-nginx controller is deployed in the `demo-app` namespace via the Hel
 This project stands on the shoulders of the upstream Kubernetes project. Credits:
 Upstream Kubernetes project — GitHub organization login `kubernetes`,
 profile URL https://github.com/kubernetes
+
+## Status
+
+Environment is live
